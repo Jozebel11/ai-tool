@@ -88,10 +88,10 @@ export default function Home() {
 
   return (
     <main
-      className={`flex min-h-screen text-black bg-white flex-col items-center justify-between p-24 ${inter.className}`}
+      className={`flex min-h-screen text-black bg-white flex-col items-center justify-between p-10 md:p-24 ${inter.className}`}
     >
       <h2 className='absolute top-0'>by jozebel.dev</h2>
-      <h1 className='font-bold text-xl'>AI Article Summary</h1>
+      <h1 className='font-bold text-center text-xl'>AI Article Summary</h1>
         <form className='flex w-full -mt-20 -mb-20 justify-center items-center flex-col' onSubmit={onSubmit}>
           <input
           className='border-black p-1 max-w-[1000px] rounded-md border-[1px] w-full'
