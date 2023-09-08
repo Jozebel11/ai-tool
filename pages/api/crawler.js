@@ -9,7 +9,6 @@ export default async function (req, res) {
   
 
     const url = String(req.body.url) || '';
-    console.log('Received URL:', url.trim().length)
     if (url.trim().length === 0) {
       res.status(400).json({
         error: {

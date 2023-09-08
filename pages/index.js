@@ -65,7 +65,7 @@ export default function Home() {
           throw data.error || new Error(`Request failed with status ${response.status}`);
         }
   
-        setResult(data.result);
+        setResult(String(data.result));
         setUrlInput("");
         if (response.status === 200) {
           setSubmitted(true);
