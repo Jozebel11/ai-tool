@@ -39,7 +39,7 @@ export default async function (req, res) {
 function generatePrompt(article) {
 
   if (article.length < 1){
-    return 'Only return "Hello I am Jozebel.ai your AI Article Summarizor. I make summarise the lengthy articles you don\'t have time to read, into smaller bite size chunks. Please enter an article you need summarising."'
+    return 'Only return "Hello I am Jozebel.ai your AI Article Summarizer. I summarise the lengthy articles you don\'t have time to read, into smaller bite size chunks. Please enter an article you need summarising."'
   }
   
   return `Summarize the given article into 1 introduction and two detailed points. Give the points a title followed by text.

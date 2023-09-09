@@ -38,7 +38,7 @@ export default function Home() {
         throw urlData.error || new Error(`Request failed with status ${urlResponse.status}`);
       }
     
-      setArticleInput(urlData.data);
+      setArticleInput(String(urlData.data).length > 2000 ? String(urlData.data).slice(0,2000) : String(urlData.data) );
       setUrlInput("")
       
       
