@@ -74,7 +74,7 @@ export default function Home() {
           throw new Error("Empty JSON response");
         }
   
-        setResult(NextResponse.json(data.result));
+        setResult(String(data.result));
         setUrlInput("");
         if (response.status === 200) {
           setSubmitted(true);
