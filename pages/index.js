@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import { useEffect, useState } from 'react';
 import CircularProgress from '@mui/material/CircularProgress';
+import { NextResponse } from 'next/server'
 
 
 
@@ -73,7 +74,7 @@ export default function Home() {
           throw new Error("Empty JSON response");
         }
   
-        setResult(String(data.result));
+        setResult(NextResponse.json(data.result));
         setUrlInput("");
         if (response.status === 200) {
           setSubmitted(true);
