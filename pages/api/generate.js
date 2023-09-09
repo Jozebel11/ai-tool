@@ -48,7 +48,7 @@ function generatePrompt(article) {
   • text
   • text]
   
-  The Article to Summarise: ###${article}###
+  The Article to Summarise: ${article}
 
 `;
 }
