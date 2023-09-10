@@ -116,7 +116,7 @@ export default function Home() {
             >
               {submitLoader ? <CircularProgress color='inherit' /> : 'Generate Summary'}
             </button>
-            <span className='text-start mt-4 text-sm text-gray-400'>{submitLoader ? 'Generating your summary. Thank you for your patience.': ''}</span>
+            <span className='text-center mt-4 text-sm text-gray-400'>{submitLoader ? 'Generating your summary. Thank you for your patience.': ''}</span>
         </form>
      
         <div className={'w-full min-h-[500px] max-w-[800px] flex flex-col '}>
