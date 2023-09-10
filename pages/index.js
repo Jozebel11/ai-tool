@@ -101,7 +101,7 @@ export default function Home() {
     >
       <h2 className='absolute top-0'>by jozebel.dev</h2>
       <h1 className='font-bold text-center text-xl'>AI Article Summary</h1>
-        <form className='flex w-full justify-center min-h-[500px] items-center flex-col' onSubmit={onSubmit}>
+        <form className='flex w-full justify-center min-h-[400px] items-center flex-col' onSubmit={onSubmit}>
           <input
           className='border-black p-1 max-w-[1000px] rounded-md border-[1px] w-full'
             type="text"
@@ -119,7 +119,7 @@ export default function Home() {
             <span>{submitLoader ? 'Generating your summary. Thank you for your patience.': ''}</span>
         </form>
      
-        <div className={'w-full max-w-[800px] flex flex-col '}>
+        <div className={'w-full min-h-[500px] max-w-[800px] flex flex-col '}>
           <p className=''>{submit&&!submitLoader ? result.split('•')[0].split(':')[1] : result}</p>
           {submit&&!submitLoader ? 
           <ul className='mt-10 list-disc'>
